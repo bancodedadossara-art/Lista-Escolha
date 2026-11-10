@@ -1,35 +1,37 @@
-Algoritmo "LISTA EXERCÕCIOS ESCOLHA - 4"
+Algoritmo "LISTA EXERC√çCIOS ESCOLHA - 4"
 
 Var
-produto: caractere
-quantidade: inteiro
-compra, valor, total: real
+produto: inteiro
+quantidadeA, quantidadeR, quantidadeS: inteiro
+total: real
 
 Inicio
-escreval ("====   FaÁa suas compras  ===")
-escreval ("Cada produto possui seu cÛdigo, confira a lista abaixo:")
-escreval ("1 - ·gua")
-escreval ("2 - refrigerante")
-escreval ("3 - suco")
-escreval ("Insira o cÛdigo correspondente ao produto desejado: ")
+escreval ("LISTA DE PRODUTOS")
+escreval ("1 - √ÅGUA")
+escreval ("2 - REFRIGERANTE")
+escreval ("3 - SUCO")
+escreval ("Qual produto deseja comprar: ")
 leia (produto)
-escreval ("Qual a quantidade do produto desejada? ")
-leia (quantidade)
-
-     escolha (compra)
-             caso 1
-             total <- quantidade * 3
-             leia total
-                  escreval ("O valor total da compra È: ", total)
-             caso 2
-             total <- quantidade * 6,50
-             leia total
-                  escreval ("O valor total da compra È: ", total)
-             caso 3
-             total <- quantidade * 8
-             leia total
-                  escreval ("O valor total da compra È: ", total)
-             outrocaso
-                      escreval ("OpÁ„o inv·lida")
+escolha (produto)
+        caso 1
+             escreval ("Produto selecionado - √Ågua, R$3,00")
+             escreval ("Qual a quantidade desejada:")
+             leia (quantidadeA)
+             total <- quantidadeA * 3
+             escreval ("O total da compra √©: ", total)
+        caso 2
+             escreval ("Produto selecionado - Refrigerante, R$6,50")
+             escreval ("Qual a quantidade desejada: ")
+             leia (quantidadeR)
+             total <- quantidadeR * 6.50
+             escreval ("O total da compra √©: ", total)
+        caso 3
+             escreval ("Produto selecionado - Suco, R$8,00")
+             escreval ("Qual a quantidade desejada: ")
+             leia (quantidadeS)
+             total <- quantidadeS * 8
+             escreval ("O total da compra √©: ", total)
+        outrocaso
+                 escreval ("Op√ß√£o inv√°lida.")
      fimescolha
 Fimalgoritmo
